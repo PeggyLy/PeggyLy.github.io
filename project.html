@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .center {
+        width: 1260px;
+        margin: 150px auto 0 auto; 
+        color: #006d75;
+    }
+    .center h2 {
+        font-size: 33px;
+    }
+    .item {
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+    .item img {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 40px;
+    }
+    .item img:first-child {
+      margin-left: 70x;
+    }
+    .item-info {
+      margin-left: 20px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .item-info h3 {
+      font-size: 33px;
+    }
+    .item-info p {
+      margin-top: 10px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body class="project">
+<div class="center">
+  <h2>Tongcheng-eLong</h2>
+  <div class="item">
+    <img src="./images/icon_air.png" alt="">
+    <div class="item-info">
+      <h3>Ground-air connection</h3>
+      <p>A free bus booking system</p>
+    </div>
+    <img src="./images/icon_card.png" alt="">
+    <div class="item-info"> 
+      <h3>Silver card upgrade</h3>
+      <p style="margin-top: 0;">An activity encourages people to<br/> complete challengs to upgrade</p>
+    </div>
+  </div>
+  <h2>BOSCH</h2>
+  <div class="item">
+    <img src="./images/icon_chery.png" alt="">
+    <div class="item-info">
+        <h3>nterface design of vehicle system</h3>
+        <p>Interface design include telematics call, phone, media, ect</p>
+    </div>
+  </div>
+  <h2>OTHERS</h2>
+  <div class="item" style="margin-bottom: 15px;">
+    <img src="./images/icon_Beijing.png" alt="">
+    <img style="margin-left: 0;" src="./images/icon_innovater.png" alt="">
+    <div class="item-info">
+        <h3>Beijing design week 2016</h3>
+        <p>Innovators——Australian design & innovationt</p>
+    </div>
+  </div>
+  <div class="item">
+      <img src="./images/icon_Dushulake.png" alt="">
+      <img style="margin-left: 0;" src="./images/icon_huihu.png" alt="">
+      <div class="item-info">
+          <h3>Dushu Lake website design</h3>
+          <p>Creative website design for Dushu Lake</p>
+      </div>
+    </div>
+</div>
+
+<script src="zepto.min.js"></script>
+<script>
+window.onload = function(){
+    document.body.style.zoom="normal";//避免zoom尺寸叠加
+    let scale=document.body.clientWidth/1920;
+    document.body.style.zoom=scale;
+}
+</script>
+</body>
+</html>

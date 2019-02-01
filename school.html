@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sketch</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .center {
+      margin-top: 150px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 50px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    h5 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <div class="item">
+      <img src="./images/icon_dongda.png" alt="">
+      <h1>Southeast University</h1>
+      <h5>Industrial Design</h5>
+      <p>Sep 2015 - June 2018</p>
+    </div>
+    <div class="item">
+      <img src="./images/icon_Monash.png" alt="">
+      <h1>Monash University</h1>
+      <h5>Industrial Design</h5>
+      <p>Sep 2015 - June 2018</p>
+    </div>
+    <div class="item">
+        <img src="./images/icon_suda.png" alt="">
+        <h1>Soochow University</h1>
+        <h5>Built Environment&Equipment Engeering</h5>
+        <p>Sep 2011 - June 2015</p>
+    </div>
+  </div>
+<script src="zepto.min.js"></script>
+<script>
+window.onload = function(){
+    document.body.style.zoom="normal";//避免zoom尺寸叠加
+    let scale=document.body.clientWidth/1920;
+    document.body.style.zoom=scale;
+}
+</script>
+</body>
+</html>

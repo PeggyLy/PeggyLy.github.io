@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LIQIUPINF</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+.cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(./images/bg1.jpg) no-repeat center / cover;
+      transition: all .5s ease-in-out;
+      display: flex;
+      justify-content: center;
+      z-index: 999;
+  }
+  .cover .left-name {
+      display: none;
+  }
+  .cover.clicked {
+      width: 400px;
+  }
+  .cover.clicked .center-name {
+      display: none;
+  }
+  .cover.clicked .left-name {
+      display: block;
+  }
+  .info {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .info .avatar {
+      width: 253px;
+      height: 252px;
+      background: url(./images/avatar.png) no-repeat center / cover;
+  }
+  .info .detail h1 {
+      font-size: 41px;
+      font-weight: normal;
+      line-height: 1;
+      margin-top: 25px;
+  }
+  .info .detail p {
+      font-size: 25px;
+  }
+  .index-main {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: calc(100% - 400px);
+      height: 100%;
+      padding: 150px 60px 0 60px;
+      overflow-y: scroll;
+  }
+  .index-main .con {
+      width: 100%;
+      /* height: 1080px; */
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .index-main .con  a {
+      display: inline-block;
+      width: 300px;
+      background-color: #fff;
+      padding: 55px 15px 85px 15px;
+      color: #006d75;
+      cursor: pointer;
+      margin-bottom: 50px;
+  }
+  .index-main .con h4 {
+      font-size: 33px;
+      text-align: center;
+      font-weight: bold;
+      line-height: 1;
+  }
+  .index-main .con img {
+      display: block;
+      width: 100%;
+      margin-top: 55px;
+  }
+  .index-main .con p {
+      font-size: 16px;
+      margin-top: 20px;
+  }
+  .clomun {
+      display: flex;
+      flex-direction: column;
+  }
+  .resume {
+      background: url(./images/resume.jpg) no-repeat center / cover;
+  }
+
+  .id {
+      background: url(./images/id.jpg) no-repeat center / cover;
+  }
+  .education {
+      background: url(./images/education.jpg) no-repeat center / cover;
+  }
+  .sketch {
+      background: url(./images/sketch.jpg) no-repeat center / cover;
+  }
+  .visual {
+      background: url(./images/visual.jpg) no-repeat center / cover;
+  }
+  .social {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+  }
+  .social ul {
+      display: flex;
+  }
+  .social ul li {
+      list-style: none;
+  }
+  .social ul a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+  }
+  .dribbble {
+      background: url(./images/icon_dribbble.png) no-repeat center / cover;
+  }
+  .behance {
+      background: url(./images/icon_behance.png) no-repeat center / cover;
+  }
+  .juejin {
+      background: url(./images/icon_juejin.png) no-repeat center / cover;
+  }
+  .github {
+      background: url(./images/icon_Git.png) no-repeat center / cover;
+  }
+  .weibo {
+      background: url(./images/icon_weibo.png) no-repeat center / cover;
+  }
+  .douban {
+      background: url(./images/icon_douban.png) no-repeat center / cover;
+  }
+  </style>
+</head>
+
+<body class="index">
+  <div class="cover">
+    <div class="info">
+      <div class="avatar"></div>
+      <div class="detail">
+        <h1 class="center-name">QIUPINF LI</h1>
+        <h1 class="left-name">李秋萍</h1>
+        <p>http://qiuping.top</p>
+        <p>Peggy_seu@163.com</p>
+        <p>Product Manager&Designer</p>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="" class="dribbble"></a>
+          </li>
+          <li>
+            <a href="" class="behance"></a>
+          </li>
+          <li>
+            <a href="" class="juejin"></a>
+          </li>
+          <li>
+            <a href="" class="github"></a>
+          </li>
+          <li>
+            <a href="" class="weibo"></a>
+          </li>
+          <li>
+              <a href="" class="douban"></a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="index-main">
+    <div class="con">
+      <div class="clomun">
+        <a class="item project">
+          <h4>PROJECTS</h4>
+          <img src="./images/project.jpg" alt="" srcset="">
+          <p>Totally there are five projects from Peggy which may show her professional work.</p>
+        </a>
+        <a class="item education">
+            <h4>EDUCATION</h4>
+          </a>
+      </div>
+      <div class="clomun">
+        <a class="item resume">
+          <h4>RESUME</h4>
+        </a>
+        <a class="item sketch">
+          <h4>SKETCH</h4>
+        </a>
+        <a class="item literature">
+          <h4>LITERATURE</h4>
+        </a>
+      </div>
+      <div class="clomun">
+        <a class="item uiux">
+          <h4>UI/UX DESIGN</h4>
+        </a>
+        <a class="item visual">
+          <h4>VISUAL DESIGN</h4>
+        </a>
+        <a class="item about">
+          <h4>ABOUT ME</h4>
+          <p>Qiuping is a product manager in Tongcheng-eLong, respon-sible for the whole products design process from idea to realize. She has a stong mind to make things better and solve problems.</p>
+        </a>
+      </div>
+      <div class="clomun">
+        <a class="item id">
+          <h4>ID DESIGN</h4>
+        </a>
+        <a class="item design">
+          <h4>DESIGN STUDIO</h4>
+          <p>There’s a group of passionate people who have the same dream to make some differe-nces. So our design studio was seted up in 2018, aiming at help others to build their own website. If you like to jion us, welcome! Design studio will see you soon.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+<script src="zepto.min.js"></script>
+<script>
+window.onload = function(){
+   document.body.style.zoom="normal";//避免zoom尺寸叠加
+   let scale=document.body.clientWidth/1920;
+   document.body.style.zoom=scale;
+}
+$('.cover').on('click', function () {
+  $(this).addClass('clicked')
+})
+</script>
+</body>
+</html>
